@@ -1,6 +1,3 @@
--- 02_multi_horizon_returns.sql
--- Purpose: Compute daily log returns and multi-horizon performance metrics
-
 WITH price_data AS (
     SELECT
         ticker,
@@ -40,3 +37,5 @@ multi_horizon_returns AS (
 )
 
 SELECT * FROM multi_horizon_returns;
+
+-- Purpose: Compute daily log returns and multi-horizon performance metrics
