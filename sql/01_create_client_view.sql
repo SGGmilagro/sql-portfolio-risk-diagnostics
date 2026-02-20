@@ -1,6 +1,3 @@
--- 01_create_client_view.sql
--- Purpose: Create cleaned client-level portfolio view
-
 CREATE VIEW client_portfolio_clean AS
 SELECT
     hc.ticker,
@@ -23,3 +20,5 @@ JOIN pricing_daily_new pd
 WHERE cd.customer_id = 148
 AND pd.price_type = 'Adjusted'
 ORDER BY pd.date;
+
+-- Purpose: Create cleaned client-level portfolio view
