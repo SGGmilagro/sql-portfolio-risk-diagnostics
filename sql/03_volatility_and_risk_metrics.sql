@@ -1,7 +1,3 @@
--- 03_volatility_and_risk_metrics.sql
--- Purpose: Compute volatility (sigma), average daily return,
--- and risk-adjusted performance per security
-
 WITH price_data AS (
     SELECT
         ticker,
@@ -32,3 +28,7 @@ risk_metrics AS (
 
 SELECT * FROM risk_metrics
 ORDER BY risk_adjusted_return DESC;
+
+
+-- Purpose: Compute volatility (sigma), average daily return,
+-- and risk-adjusted performance per security
